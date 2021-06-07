@@ -11,7 +11,7 @@ Para evitar problemas con la instalación de python, se recomienda utilizar Anac
 Si ha instalado Miniconda en su sistema, cree un nuevo entorno para trabajar con este repositorio de la siguiente manera:
 
 ```bash
-conda create -n final-rl tensorflow-gpu==1.15.0 
+conda create -n final-rl tensorflow-gpu==1.14.0 
 conda activate final-rl
 ```
 

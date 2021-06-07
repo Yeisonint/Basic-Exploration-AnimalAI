@@ -351,3 +351,9 @@ MigrationBackup/
 
 # Entorno
 AnimalAI/*
+
+# Configuracion del vs code
+.vscode/*
+
+# Logs
+logs/*

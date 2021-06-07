@@ -1,0 +1,273 @@
+# Takes the basic exploration arenas in single file
+!ArenaConfig
+arenas:
+  0: !Arena
+    pass_mark: 4
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 7, y: 0, z: 7}
+      rotations: [225]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 32, y: 0, z: 32}
+      sizes:
+      - !Vector3 {x: 5, y: 5, z: 5}  
+  1: !Arena
+    pass_mark: 4
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 3}
+      rotations: [180]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 35, y: 0, z: 22.5}
+      sizes:
+      - !Vector3 {x: 5, y: 5, z: 5}  
+  2: !Arena
+    pass_mark: 4
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 3}
+      rotations: [180]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 5, y: 0, z: 22.5}
+      sizes:
+      - !Vector3 {x: 5, y: 5, z: 5}  
+  3: !Arena
+    pass_mark: 0
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 7, y: 0, z: 7}
+      rotations: [225]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 32, y: 0, z: 32}
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}  
+  4: !Arena
+    pass_mark: 0
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 3}
+      rotations: [180]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 38, y: 0, z: 22.5}
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}  
+  5: !Arena
+    pass_mark: 0
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 3}
+      rotations: [180]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 2, y: 0, z: 22.5}
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+  6: !Arena
+    pass_mark: -0.5
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 7, y: 0, z: 7}
+      rotations: [225]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 32, y: 0, z: 32}
+      sizes:
+      - !Vector3 {x: .5, y: .5, z: .5}
+  7: !Arena
+    pass_mark: -0.5
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 3}
+      rotations: [180]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 38, y: 0, z: 22.5}
+      sizes:
+      - !Vector3 {x: .5, y: .5, z: .5}  
+  8: !Arena
+    pass_mark: -0.5
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 3}
+      rotations: [180]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 2, y: 0, z: 22.5}
+      sizes:
+      - !Vector3 {x: .5, y: .5, z: .5}  
+  9: !Arena
+    pass_mark: 0
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 7, y: 0, z: 7}
+      rotations: [225]
+    - !Item
+      name: GoodGoalMulti
+      positions:
+      - !Vector3 {x: 32, y: 0, z: 32}
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}  
+  10: !Arena
+    pass_mark: 0
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 3}
+      rotations: [180]
+    - !Item
+      name: GoodGoalMulti
+      positions:
+      - !Vector3 {x: 38, y: 0, z: 22.5}
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1} 
+  11: !Arena
+    pass_mark: 0
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 3}
+      rotations: [180]
+    - !Item
+      name: GoodGoalMulti
+      positions:
+      - !Vector3 {x: 2, y: 0, z: 22.5}
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}  
+  12: !Arena
+    pass_mark: -0.5
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 1, y: 0, z: 1}
+      rotations: [225]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 39, y: 0, z: 39}
+      sizes:
+      - !Vector3 {x: .5, y: .5, z: .5}
+  13: !Arena
+    pass_mark: -0.5
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 10, y: 0, z: 1}
+      rotations: [180]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 39, y: 0, z: 30}
+      sizes:
+      - !Vector3 {x: .5, y: .5, z: .5}
+  14: !Arena
+    pass_mark: -0.5
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 39, y: 0, z: 10}
+      rotations: [118]
+    - !Item
+      name: GoodGoal
+      positions:
+      - !Vector3 {x: 1, y: 0, z: 31}
+      sizes:
+      - !Vector3 {x: .5, y: .5, z: .5}
+  15: !Arena
+    pass_mark: -0.5
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 1, y: 0, z: 1}
+      rotations: [225]
+    - !Item
+      name: GoodGoalMulti
+      positions:
+      - !Vector3 {x: 39, y: 0, z: 39}
+      sizes:
+      - !Vector3 {x: .5, y: .5, z: .5}
+  16: !Arena
+    pass_mark: -0.5
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 10, y: 0, z: 1}
+      rotations: [180]
+    - !Item
+      name: GoodGoalMulti
+      positions:
+      - !Vector3 {x: 39, y: 0, z: 30}
+      sizes:
+      - !Vector3 {x: .5, y: .5, z: .5}
+  17: !Arena
+    pass_mark: -0.5
+    t: 250
+    items:
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 39, y: 0, z: 10}
+      rotations: [118]
+    - !Item
+      name: GoodGoalMulti
+      positions:
+      - !Vector3 {x: 1, y: 0, z: 31}
+      sizes:
+      - !Vector3 {x: .5, y: .5, z: .5}
