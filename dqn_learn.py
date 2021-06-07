@@ -1,4 +1,4 @@
-# # # Inhabilita las alertas
+# Inhabilita las alertas
 import warnings
 warnings.filterwarnings('ignore')
 import tensorflow as tf
@@ -34,10 +34,10 @@ def main(total_timesteps,alpha,gamma,worker_id):
     # Usando Baselines para entrenar la red
     act = deepq.learn(env=env, network="cnn", total_timesteps=total_timesteps, lr=alpha, gamma=gamma,
         buffer_size=total_timesteps//2,
-        exploration_fraction = 0.5,
-        print_freq=10,
+        exploration_fraction = 0.35,
+        print_freq=100,
         train_freq=5,
-        learning_starts=1000,
+        learning_starts=total_timesteps//100,
         target_network_update_freq=total_timesteps//400,
         prioritized_replay=True,
         checkpoint_freq=total_timesteps//100,

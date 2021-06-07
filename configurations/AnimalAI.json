@@ -1,0 +1,32 @@
+{
+    "measure": "reward",
+    "thresholds": [
+      0.8,
+      0.8,
+      0.8,
+      0.6,
+      0.2
+    ],
+    "min_lesson_length": 100,
+    "signal_smoothing": true,
+    "configuration_files": [
+      "1-12-1.yml",
+      "1-12-2.yml",
+      "1-12-3.yml",
+      "1-13-1.yml",
+      "1-13-2.yml",
+      "1-13-3.yml",
+      "1-14-1.yml",
+      "1-14-2.yml",
+      "1-14-3.yml",
+      "1-15-1.yml",
+      "1-15-2.yml",
+      "1-15-3.yml",
+      "1-16-1.yml",
+      "1-16-2.yml",
+      "1-16-3.yml",
+      "1-17-1.yml",
+      "1-17-2.yml",
+      "1-17-3.yml"
+    ]
+  }
