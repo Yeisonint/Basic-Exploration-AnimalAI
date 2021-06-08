@@ -29,12 +29,12 @@ def make_aai_env(env_directory, num_env, arenas_configurations, start_index=0):
                 arenas_configurations=arena_configuration,
                 uint8_visual=True,
             )
-            env = Monitor(env, logger.get_dir() and os.path.join(logger.get_dir(), str(rank)))
+            env = Monitor(env, logger.get_dir() and os.path.join(logger.get_dir(), str(rank)), allow_early_resets=True)
             return env
 
         return _thunk
     return SubprocVecEnv(
-        [make_env(i + 20 + start_index, arenas_configurations) for i in range(num_env)]
+        [make_env(i + 10 + start_index, arenas_configurations) for i in range(num_env)]
     )
 
 
@@ -48,11 +48,11 @@ def main(total_timesteps,alpha,gamma,epsilon):
     act = a2c.learn(env=env, network="cnn", total_timesteps=total_timesteps, lr=alpha, gamma=gamma,epsilon=epsilon)
 
     # Guardar el modelo entrenado
-    print("Guardando modelo en a2c_model.pkl")
-    act.save("./logs/a2c/a2c_model.pkl")
+    print("Guardando modelo en a_two_c_model.pkl")
+    act.save("./models/a_two_c_model.pkl")
 
 if __name__ == "__main__":
-    # total_timesteps,alpha,gamma
+    # total_timesteps,alpha,gamma,epsilon
     argv = [str(arg) for arg in sys.argv[1:]]
     main(int(argv[0]),float(argv[1]),float(argv[2]),float(argv[3]))
     # python -i .\a2c_learn.py 100000 0.001 0.95 0.0001

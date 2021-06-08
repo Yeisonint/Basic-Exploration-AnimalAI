@@ -34,7 +34,7 @@ def make_aai_env(env_directory, num_env, arenas_configurations, start_index=0):
 
         return _thunk
     return SubprocVecEnv(
-        [make_env(i + start_index, arenas_configurations) for i in range(num_env)]
+        [make_env(i + 40 + start_index, arenas_configurations) for i in range(num_env)]
     )
 
 

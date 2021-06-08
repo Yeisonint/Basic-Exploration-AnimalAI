@@ -29,7 +29,7 @@ def make_aai_env(env_directory, num_env, arenas_configurations, start_index=0):
                 arenas_configurations=arena_configuration,
                 uint8_visual=True,
             )
-            env = Monitor(env, logger.get_dir() and os.path.join(logger.get_dir(), str(rank)))
+            env = Monitor(env, logger.get_dir() and os.path.join(logger.get_dir(), str(rank)), allow_early_resets=True)
             return env
 
         return _thunk
@@ -49,7 +49,7 @@ def main(total_timesteps,alpha,gamma):
 
     # Guardar el modelo entrenado
     print("Guardando modelo en acer_model.pkl")
-    act.save("./logs/acer/acer_model.pkl")
+    act.save("./models/acer_model.pkl")
 
 if __name__ == "__main__":
     # total_timesteps,alpha,gamma

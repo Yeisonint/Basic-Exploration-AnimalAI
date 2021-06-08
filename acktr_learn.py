@@ -34,7 +34,7 @@ def make_aai_env(env_directory, num_env, arenas_configurations, start_index=0):
 
         return _thunk
     return SubprocVecEnv(
-        [make_env(i + 20 + start_index, arenas_configurations) for i in range(num_env)]
+        [make_env(i + 30 + start_index, arenas_configurations) for i in range(num_env)]
     )
 
 
@@ -49,7 +49,7 @@ def main(total_timesteps,alpha,gamma):
 
     # Guardar el modelo entrenado
     print("Guardando modelo en acktr_model.pkl")
-    act.save("./logs/acktr/acktr_model.pkl")
+    act.save("./models/acktr_model.pkl")
 
 if __name__ == "__main__":
     # total_timesteps,alpha,gamma
