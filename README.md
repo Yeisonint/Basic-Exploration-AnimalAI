@@ -34,7 +34,6 @@ pip install .
 Con esto ya tenemos la libreria de AnimalAI con sus dependencias.
 
 # Descargar el entorno según el sistema operativo
-
 Tal cual como lo describe en la documentación de AnimalAI, se debe descargar el entorno según el sistema operativo en el cual se esta trabajando y extraer la carpeta AnimalAI en el mismo directorio donde este almacenado este repositorio en su computador:
 
 
@@ -46,3 +45,42 @@ Tal cual como lo describe en la documentación de AnimalAI, se debe descargar el
 
 Existe una versión 2.0.2 para linux, pero no la vamos a usar. Recuerde que en linux debe darle permisos de ejecución al archivo AnimalAI.
 
+# Ejecutar los entrenamientos
+En cada archivo de entrenamiento hay un comentario de ejemplo para la ejecución del algoritmo de aprendizaje, igualmente, para ejecutar cada uno de ellos se tiene que colocar en una consola con el entorno de conda descrito anteriormente.
+
+*Reemplazar los argumentos con valores numericos asociados.
+
+A2C:
+```bash
+python .\a2c_learn.py total_timesteps alpha gamma epsilon
+```
+
+ACER:
+```bash
+python .\acer_learn.py total_timesteps alpha gamma
+```
+
+ACKTR:
+```bash
+python .\acktr_learn.py total_timesteps alpha gamma
+```
+
+DQN:
+```bash
+python .\dqn_learn.py total_timesteps alpha gamma
+```
+
+PPO2:
+```bash
+python .\ppo2_learn.py total_timesteps alpha gamma
+```
+
+# Probar los modelos entrenados
+Luego de ejecutar los entrenamientos, los modelos quedan dentro de la carpeta "./models", de ahi se pueden tomar como parámetro para el script *test_train.py*, dentro de la carpeta "./configurations" estan todos los entornos correspondientes al Basic Exploration, asi como en el archivo de configuración *BasicExplorationArenas.yml*.
+
+*El parámetro alg debe ser alguno de estos: a2c,acer,acktr,dqn,ppo2
+
+Test model:
+```bash
+python .\test_train.py worker_id alg model_path
+```
